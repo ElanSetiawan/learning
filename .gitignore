@@ -3,9 +3,8 @@ node_modules
 /dist
 
 # local env files
-.env.env02
-.env.stag
-.env.prod
+#.env.stag
+#.env.prod
 
 # Log files
 npm-debug.log*
