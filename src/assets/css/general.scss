@@ -1,0 +1,229 @@
+//@import '~vuetify/src/stylus/main' ;
+body {
+    font-family: "Circular Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+  }
+  /* resources */
+  @font-face {
+    font-family: "Circular Black";
+    src: url('/fonts/circular-std-black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular Bold";
+    src: url("/fonts/circular-std-bold.woff2") format('woff2');
+  }
+  @font-face {
+    font-family: "Circular Book";
+    src: url("/fonts/circular-std-book.woff2") format('woff2');
+  }
+  @font-face {
+    font-family: "Circular Medium";
+    src: url('/fonts/circular-std-medium.woff2') format('woff2');
+  }
+.bgwhite {
+  background-color: white;
+  padding: 10px 15px;
+}
+
+.center {
+  text-align: center;
+  height: 130px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info {
+  padding: 10px;
+  > * {
+      background-color: white;
+      padding: 10px;
+      &:first-child {
+          padding: 10px 10px 15px;
+          text-align: center;
+      }
+  }
+}
+
+.mydata {
+    font-family: "Circular Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  .on_out {
+      padding: 8px;
+  }
+}
+
+.nopad {
+  padding: 0;
+  margin: 0;
+}
+
+.imgLoad {
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+  img {
+      width: 60px;
+  }
+}
+
+.one_data {
+  @media screen and (min-width: 998px) {
+      width: 33.33333333%;
+  }
+  @media (min-width: 481px) and (max-width: 997px) {
+      width: 50%;
+  }
+  @media screen and (max-width: 480px) {
+      width: 100%;
+  }
+  display: inline-table;
+  .iconUser
+      {
+          &> .material-icons {
+      font-size: 35px;
+      color: #aaa;
+      }
+      img {
+          width: 35px !important;
+          vertical-align: middle;
+          padding-right: 5px;
+      }
+  }
+  i {
+      width: 35px !important;
+      vertical-align: middle;
+      padding-right: 5px;
+  }
+  .share {
+      i {
+      width: 24px !important;
+      float: right;
+      padding-top: 20px;
+      color: #aaa;
+      }
+      img {
+          width: 24px !important;
+          float: right;
+          padding-top: 20px;
+      }
+  }
+  .on_da {
+      background-color: white;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      .desc {
+          font-size: 14px;
+          padding: 8px 0;
+          border-bottom: 1px solid whitesmoke;
+      }
+      .autor {
+          font-size: 12px;
+          padding-top: 10px;
+          display: inline-table;
+          span {
+              display: inline-table;
+              vertical-align: text-bottom;
+          }
+      }
+      > * {
+          padding: 4px;
+      }
+      img {
+          width: 120px;
+      }
+      .Label {
+          font-size: 16px;
+          font-weight: bold;
+          padding-bottom: 5px;
+          a {
+              text-decoration: none;
+              color: #333;
+          }
+      }
+      .capt {
+          padding: 8px 16px 16px;
+      }
+      &> *:nth-child(1) {
+        height: 190px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+  }
+}
+.bg-smoke{
+    background-color: #f2f2f2;
+}
+.text-center{
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+  display: table;
+}
+
+.one_data.detil {
+  width: calc(100% + 14px);
+  margin-left: -8px;
+  margin-right: -8px;
+  .on_da {
+      width: 100%;
+      display: inline-table;
+      .capt {
+          display: table-cell;
+          vertical-align: top;
+          width: 100%;
+          @media screen and (max-width: 480px) {
+              display: block;
+              width: initial;
+          }
+      }
+  }
+  .center {
+      width: 220px;
+      display: table-cell;
+      @media screen and (max-width: 480px) {
+          display: block;
+          width: initial;
+      }
+  }
+  .on_da > *:nth-child(1) {
+    width: 250px;
+}
+}
+.notfound {
+  text-align: center;
+  padding: 10%;
+  img {
+      max-width: 100%;
+      margin: auto;
+      max-width: 200px;
+  }
+  a {
+      padding-top: 20px;
+      display: inline-block;
+  }
+}
+.baner {
+  background-size: contain;
+  background-position: center;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.label-head {
+    padding-top: 2rem;
+    display: block;
+    font-size: 17px;
+}
+.pad22 {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.padB3 {
+    padding-bottom: 3rem;
+}
